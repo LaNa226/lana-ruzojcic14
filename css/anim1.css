@@ -41,7 +41,9 @@
 } 
  
 #element { 
-  display: inline-block; 
+   display: inline-block; 
   border: 1px solid black; 
   box-sizing: border-box; 
+
+  animation: prva-animacija 3s infinite;
 }
