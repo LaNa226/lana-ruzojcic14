@@ -6,7 +6,6 @@
   width: 200px;
   height: 40px;
   text-align: center;
-  transition: color 0.3s; /* glatka promjena boje */
 }
 
 .animirani:hover {
@@ -16,7 +15,7 @@
 @keyframes animiraj-box {
   0% {
     transform: rotate(0deg);
-    color: black; /* prije je bilo "back" što ne postoji */
+    color: black; /* ispravljeno, prije je bilo "back" */
   }
   45% {
     transform: rotate(180deg);
@@ -31,4 +30,3 @@
     color: black;
   }
 }
-
