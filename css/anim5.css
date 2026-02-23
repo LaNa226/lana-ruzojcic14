@@ -1,30 +1,25 @@
-.tekst-animacija { 
-font-size: 40px; 
-text-align: center; 
-color: red; 
-opacity: 0; /* Početno stanje: nevidljivo */ 
-anima on: pojavi-i-boja 3s forwards; /* Pokreće animaciju */ 
-} 
-@keyframes pojavi-i-boja { 
-0% { 
-opacity: 0;             
-color: red;            
-/* potpuno nevidljivo */ 
- /* početna boja */ 
-transform: translateY(-50px); /* pomak gore */ 
-} 
-50% { 
-opacity: 0.5;         
-color: orange;        
-  /* poluprovidno */ 
-  /* mijenja boju */ 
-transform: translateY(0px);  /* vraća se u sredinu */ 
-} 
-100% { 
-opacity: 1;             
-color: green;           
-/* potpuno vidljivo */ 
-/* krajnja boja */ 
-transform: translateY(0px);  /* ostaje u sredini */ 
-} 
+.tekst-animacija {
+  font-size: 40px;
+  text-align: center;
+  color: red;
+  opacity: 0; /* početno stanje: nevidljivo */
+  animation: pojavi-i-boja 3s forwards; /* pokreće animaciju */
+}
+
+@keyframes pojavi-i-boja {
+  0% {
+    opacity: 0;
+    color: red;
+    transform: translateY(-50px); /* pomak gore */
+  }
+  50% {
+    opacity: 0.5;
+    color: orange;
+    transform: translateY(0px);  /* vraća se u sredinu */
+  }
+  100% {
+    opacity: 1;
+    color: green;
+    transform: translateY(0px);  /* ostaje u sredini */
+  }
 }
